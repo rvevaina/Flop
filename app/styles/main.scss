@@ -3,7 +3,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 $global: "Raleway", "sans-serif";
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
 
@@ -167,11 +167,10 @@ body {
     border-radius: 5px;
     background:#fdf0cf;
     margin:35px 0 0 5px;
-
-
 }
 
 }
+
 
 
 /* Responsive: Portrait tablets and up */
@@ -196,6 +195,38 @@ body {
     /* Remove the bottom border on the app for visual effect */
     .app {
         border-bottom: 0;
+    }
+}
+
+.contactContainer {
+    max-width:700px;
+    height:auto;
+    margin:0 auto;
+}
+ul.contact-list {
+    background: rgba(255, 255, 255, .9);
+    list-style:none;
+    font-size:2rem;
+    line-height:3rem;
+    width: 350px;
+    height:500px;
+    padding:5%;
+    margin: 10% auto;   
+    border:1px solid black;
+    h1 {
+        text-align: center;
+        padding-bottom: 2%;
+        color:orange;
+        margin: 2% 0 7% 0;
+    }
+    li{
+        font-family:Raleway;
+        border-bottom: 1px solid black;
+        a.contact-slide{
+        color:rgba(27,125,128,1);
+        text-decoration: none;
+        }
+        i {text-align:center;}
     }
 }
 
